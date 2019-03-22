@@ -21,19 +21,22 @@ public class Calculadora {
         int x, y, z;
         x = Integer.parseInt(JOptionPane.showInputDialog("Insira o primeiro número"));
         y = Integer.parseInt(JOptionPane.showInputDialog("Insira o segundo número"));
-        z = Integer.parseInt(JOptionPane.showInputDialog("Insira 1 caso queira somar\n Insira 2 caso queira subtrair\n Insira 3 caso queira multiplicar\n Insira 4 caso queira dividir"));
+        z = Integer.parseInt(JOptionPane.showInputDialog("Insira 1 caso queira somar\n Insira 2 caso queira subtrair\n Insira 3 caso queira multiplicar\n Insira 4 caso queira dividir\n Insira 5 caso queira fazer porcentagem"));
         if(z==1){
             System.out.println("O resultado é "+operacoes.somar(x, y));
         }else{
             if(z==2){
                 System.out.println("O resultado é "+operacoes.subtrair(x, y));
             }else{
-                if(x==3){
+                if(z==3){
                     System.out.println("O resultado é "+operacoes.multiplicar(x, y));
                 }else{
-                    if(x==4){
+                    if(z==4){
                        System.out.println("O resultado é "+operacoes.dividir(x, y));
                     }else{
+                        if(z==5){
+                            System.out.println("O resultado é "+operacoes.porcent(x, y));
+                        }
                         System.out.println("Operação inválida");
                     }
                 }

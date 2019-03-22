@@ -14,6 +14,7 @@ public class Operacoes {
     float subtracao;
     float multiplicacao;
     float divisao;
+    float porcentagem;
     
     public float somar(float x, float y){
         this.soma=x+y;
@@ -34,4 +35,9 @@ public class Operacoes {
         this.divisao=x/y;
         return this.divisao;
 }
+    
+    public float porcent(float x, float y){
+        this.porcentagem=x*y/100;
+        return this.porcentagem;
+    }
 }
